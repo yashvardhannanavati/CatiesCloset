@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "691365907959",
+    "firebase_url": "https://caties-closet.firebaseio.com",
+    "project_id": "caties-closet",
+    "storage_bucket": "caties-closet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691365907959:android:10712965b54366a7",
+        "android_client_info": {
+          "package_name": "com.example.yashnanavati.catiescloset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691365907959-p1tfu9r33l0olip2qhvg634tqd6ln2n7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yashnanavati.catiescloset",
+            "certificate_hash": "c06bfb7a889e06bbb19b1e07ca4569e9e0d1c449"
+          }
+        },
+        {
+          "client_id": "691365907959-e8uskt4999pnh68s9qgjb9gitub407m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU8qKOVuZJP6EXCcQl4qhH5qCUZMK5TxM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691365907959-e8uskt4999pnh68s9qgjb9gitub407m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
