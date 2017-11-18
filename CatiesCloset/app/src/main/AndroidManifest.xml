@@ -34,9 +34,7 @@
             tools:replace="android:theme" />
         <activity android:name=".TwitterLoginActivity" />
         <activity android:name=".Login.SignUpActivity" />
-        <activity
-            android:name=".Home.HomeActivity"
-            android:label="@string/title_activity_home"></activity>
+        <activity android:name=".Home.HomeActivity"></activity>
     </application>
 
 </manifest>
