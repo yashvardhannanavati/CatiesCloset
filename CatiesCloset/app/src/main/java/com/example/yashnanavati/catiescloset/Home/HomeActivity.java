@@ -20,7 +20,7 @@ import com.example.yashnanavati.catiescloset.R;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private final int[] colors = {R.color.bottomtab_0, R.color.bottomtab_1, R.color.bottomtab_2};
+    private final int[] colors = {R.color.bottomtab_0, R.color.bottomtab_1, R.color.cornflower_blue};
 
     private Toolbar toolbar;
     private NoSwipePager viewPager;
@@ -39,9 +39,10 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitleTextColor(0xFFFFFFFF);
         setSupportActionBar(toolbar);
         //noinspection ConstantConditions
-        getSupportActionBar().setTitle("Bottom Navigation");
+        getSupportActionBar().setTitle("Catie's Closet");
 
 
         setupViewPager();
@@ -61,7 +62,7 @@ public class HomeActivity extends AppCompatActivity {
         setupBottomNavBehaviors();
         setupBottomNavStyle();
 
-        createFakeNotification();
+        //createFakeNotification();
 
         addBottomNavigationItems();
         bottomNavigation.setCurrentItem(0);
@@ -91,9 +92,9 @@ public class HomeActivity extends AppCompatActivity {
         viewPager.setPagingEnabled(false);
         pagerAdapter = new BottomBarAdapter(getSupportFragmentManager());
 
-        pagerAdapter.addFragments(createFragment(R.color.bottomtab_0));
-        pagerAdapter.addFragments(createFragment(R.color.bottomtab_1));
-        pagerAdapter.addFragments(createFragment(R.color.bottomtab_2));
+        pagerAdapter.addFragments(createFragment(R.color.cornflower_blue));
+        pagerAdapter.addFragments(createFragment(R.color.cornflower_blue));
+        pagerAdapter.addFragments(createFragment(R.color.cornflower_blue));
 
         viewPager.setAdapter(pagerAdapter);
     }
@@ -112,23 +113,23 @@ public class HomeActivity extends AppCompatActivity {
         return bundle;
     }
 
-    private void createFakeNotification() {
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                AHNotification notification = new AHNotification.Builder()
-                        .setText("1")
-                        .setBackgroundColor(Color.YELLOW)
-                        .setTextColor(Color.BLACK)
-                        .build();
-                // Adding notification to last item.
-
-                bottomNavigation.setNotification(notification, bottomNavigation.getItemsCount() - 1);
-
-                notificationVisible = true;
-            }
-        }, 1000);
-    }
+//    private void createFakeNotification() {
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                AHNotification notification = new AHNotification.Builder()
+//                        .setText("1")
+//                        .setBackgroundColor(Color.YELLOW)
+//                        .setTextColor(Color.BLACK)
+//                        .build();
+//                // Adding notification to last item.
+//
+//                bottomNavigation.setNotification(notification, bottomNavigation.getItemsCount() - 1);
+//
+//                notificationVisible = true;
+//            }
+//        }, 1000);
+//    }
 
 
     public void setupBottomNavBehaviors() {
@@ -155,7 +156,7 @@ public class HomeActivity extends AppCompatActivity {
         Will not be visible if setColored(true) and default current item is set.
          */
         bottomNavigation.setDefaultBackgroundColor(Color.WHITE);
-        bottomNavigation.setAccentColor(fetchColor(R.color.bottomtab_0));
+        bottomNavigation.setAccentColor(fetchColor(R.color.cornflower_blue));
         bottomNavigation.setInactiveColor(fetchColor(R.color.bottomtab_item_resting));
 
         // Colors for selected (active) and non-selected items.
@@ -175,8 +176,8 @@ public class HomeActivity extends AppCompatActivity {
      * Also assigns a distinct color to each Bottom Navigation item, used for the color ripple.
      */
     private void addBottomNavigationItems() {
-        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.title_home, R.drawable.ic_home_black_24dp, colors[0]);
-        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.title_donate, R.drawable.icon_donate, colors[1]);
+        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.title_home, R.drawable.ic_home_black_24dp, colors[2]);
+        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.title_donate, R.drawable.icon_donate, colors[2]);
         AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.title_aboutUs, R.drawable.ic_dashboard_black_24dp, colors[2]);
 
         bottomNavigation.addItem(item1);

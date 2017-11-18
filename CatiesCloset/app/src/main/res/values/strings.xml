@@ -78,5 +78,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_donate">Donate</string>
-    <string name="title_aboutUs">Donate</string>
+    <string name="title_aboutUs">About Us</string>
+    <string name="title_newsFeed">News Feed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

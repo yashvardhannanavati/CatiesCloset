@@ -160,7 +160,6 @@ public class MainActivity extends BaseActivity implements
 
         /* FireBase Auth */
         mAuth = FirebaseAuth.getInstance();
-
         /* Facebook Login */
         ImageView facebookButton = findViewById(R.id.icon_fb);
         mCallbackManager = CallbackManager.Factory.create();

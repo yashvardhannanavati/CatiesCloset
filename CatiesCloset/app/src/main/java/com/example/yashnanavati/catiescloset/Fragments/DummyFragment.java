@@ -46,9 +46,9 @@ public class DummyFragment extends Fragment {
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.fragment_square_recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
-        recyclerView.setBackgroundColor(getLighterColor(color));
+        recyclerView.setBackgroundColor(Color.WHITE);
 
-        SimpleAdapter adapter = new SimpleAdapter(getContext());
+        CardViewAdapter adapter = new CardViewAdapter(getContext());
         recyclerView.setAdapter(adapter);
 
         return rootView;
