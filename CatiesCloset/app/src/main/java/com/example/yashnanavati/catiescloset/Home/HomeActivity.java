@@ -1,7 +1,6 @@
 package com.example.yashnanavati.catiescloset.Home;
 
 import android.graphics.Color;
-import android.os.Handler;
 import android.support.annotation.ColorRes;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
@@ -95,6 +94,7 @@ public class HomeActivity extends AppCompatActivity {
         pagerAdapter.addFragments(createFragment(R.color.cornflower_blue));
         pagerAdapter.addFragments(createFragment(R.color.cornflower_blue));
         pagerAdapter.addFragments(createFragment(R.color.cornflower_blue));
+        pagerAdapter.addFragments(createFragment(R.color.cornflower_blue));
 
         viewPager.setAdapter(pagerAdapter);
     }
@@ -178,10 +178,12 @@ public class HomeActivity extends AppCompatActivity {
     private void addBottomNavigationItems() {
         AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.title_home, R.drawable.ic_home_black_24dp, colors[2]);
         AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.title_donate, R.drawable.icon_donate, colors[2]);
-        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.title_aboutUs, R.drawable.ic_dashboard_black_24dp, colors[2]);
+        AHBottomNavigationItem item4 = new AHBottomNavigationItem(R.string.title_dashboard, R.drawable.ic_dashboard_black_24dp, colors[2]);
+        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.title_aboutUs, R.drawable.icon_aboutus, colors[2]);
 
         bottomNavigation.addItem(item1);
         bottomNavigation.addItem(item2);
+        bottomNavigation.addItem(item4);
         bottomNavigation.addItem(item3);
     }
 
