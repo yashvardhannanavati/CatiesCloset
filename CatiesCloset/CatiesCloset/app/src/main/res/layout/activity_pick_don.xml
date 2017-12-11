@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:weightSum="0">
+
+        <!-- Linear layout added as required for a scrollview -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingTop="30dp"
+            android:layout_weight="3"
+            app:srcCompat="@drawable/ccdel" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Fill the form for USPS labels:"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="15dp">
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_name"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_name"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="Name" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_email"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_email"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="Email"
+
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_address"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_address"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="Address" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_cityzip"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_Cityzip"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="City and Zip Code"
+
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_bag1"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_bag1"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"
+                    android:hint="Weight of Bag 1 (in lb)" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_bag2"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_bag2"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+
+                    android:hint="Weight of Bag 2 (in lb)" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_bag3"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_bag3"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"
+                    android:hint="Weight of Bag 3 (in lb)" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_bag4"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_bag4"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"
+                    android:hint="Weight of Bag 4 (in lb)" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_bag5"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_bag5"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"
+                    android:hint="Weight of Bag 5 (in lb)" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_bag6"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_bag6"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"
+                    android:hint="Weight of Bag 6 (in lb)" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_bag7"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_bag7"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"
+                    android:hint="Weight of Bag 7 (in lb)" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_bag8"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_bag8"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"
+                    android:hint="Weight of Bag 8 (in lb)" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_bag9"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_bag9"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"
+                    android:hint="Weight of Bag 9 (in lb)" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_bag10"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_bag10"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"
+                    android:hint="Weight of Bag 10 (in lb)" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/btn_signup"
+
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/login_button_shape"
+                android:textSize="20dp"
+                android:text="ASK FOR USPS LABEL"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/material_view_pager_placeholder"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/cardMarginVertical"
+            android:layout_marginLeft="@dimen/cardMarginHorizontal"
+            android:layout_marginRight="@dimen/cardMarginHorizontal"
+            android:layout_marginTop="@dimen/cardMarginVertical"
+            android:background="@android:color/white"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/txtEditName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Edit Username:"
+                    android:textSize="20sp" />
+
+
+
+                <EditText xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/enterName"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_400"
+                    android:text="Enter Your Name"
+                    android:hint="Username"
+                    android:textSize="20sp"/>
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="20dp" />
+
+                <Button
+                    android:id="@+id/btnChangePic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Update Profile Picture"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/login_button_shape"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"/>
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="10dp" />
+
+
+                <ImageView
+                    android:id="@+id/imgSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/kid1" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

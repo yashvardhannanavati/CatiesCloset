@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/init"
+        android:layout_height="300dp"
+        android:src="@drawable/ind1"
+        android:layout_marginTop="32dp"
+        android:maxWidth="400dp"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/mi_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/init"
+        tools:ignore="UnusedAttribute"
+        android:text="Give Clothes" />
+    <TextView
+        android:id="@+id/mi_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/mi_title"
+        tools:ignore="UnusedAttribute"
+        android:text="Give Confidence" />
+
+
+    <TextView
+        android:id="@+id/mi_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:lineSpacingMultiplier="1.25"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/mi_title2"
+        tools:text="Please Donate Today " />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/button"
+        android:layout_below="@id/mi_description"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Donate Now"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.yashnanavati.catiescloset.DonationModule.CashdonActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:weightSum="0">
+
+        <!-- Linear layout added as required for a scrollview -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingTop="30dp"
+            android:layout_weight="3"
+            app:srcCompat="@drawable/ccdel2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txtDonation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text=" Your donation:"
+                android:layout_gravity="center_horizontal"
+                android:textSize="28dp"
+                />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:id="@+id/txtValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="$0.00 "
+                android:alpha="0.8"
+                android:gravity="right"
+                android:textSize="28dp"
+                android:paddingBottom="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Donation Amount"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@drawable/login_button_shape"
+                android:text="$25"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@drawable/login_button_shape"
+                android:text="$50"
+                android:textColor="#FFFFFF"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@drawable/login_button_shape"
+                android:text="$100"
+                android:textColor="#FFFFFF"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn250"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@drawable/login_button_shape"
+                android:text="$250"
+                android:textColor="#FFFFFF"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_shape"
+                android:text="Other:"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/txtOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:alpha="0.4"
+                android:text="$0"
+                android:textSize="28dp"
+                />
+
+        </LinearLayout>
+
+        //Billing information
+
+        <TextView
+            android:id="@+id/txtbilling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text=" Billing Information"
+            android:layout_gravity="left"
+            android:paddingTop="15dp"
+            android:textSize="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="3dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="3dp">
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_name"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_name"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="Name" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_email"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                >
+
+                <EditText
+
+                    android:id="@+id/signup_input_email"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="Email"
+
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_address"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_address"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="Address" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_country"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_country"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="Country"
+
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_state"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_state"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="State"
+
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/signup_input_layout_zip"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/signup_input_zip"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="ZipCode"
+
+                    android:singleLine="true"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            //Credit card info
+
+            <TextView
+                android:id="@+id/txtcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text=" Payment Details"
+                android:layout_gravity="left"
+                android:paddingTop="20dp"
+                android:textSize="20dp"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/creditcardtype" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name on Card"
+                android:alpha="0.4"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card Number"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:alpha="0.4"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CVV"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:alpha="0.4"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expiration Month"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:alpha="0.4"
+                    android:textSize="18dp" />
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expiration Year"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:alpha="0.4"
+                    android:textSize="18dp" />
+
+
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="15dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text=" You will be charged:"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="24dp"/>
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"/>
+
+
+                <TextView
+                    android:id="@+id/txtTotalValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="$0.00 "
+                    android:alpha="0.8"
+                    android:gravity="right"
+                    android:textSize="24dp"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_signup"
+
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/login_button_shape"
+                android:textSize="20dp"
+                android:text="SUBMIT"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
